@@ -1,0 +1,19 @@
+<div class="row">
+	<form #trainer="ngForm" (ngSubmit)="onSubmit(trainer)" class="col l12">
+
+		<div class="input-field col l4">
+        <input id="nome" type="text" name="nome" ngModel>
+        <label for="nome">Nome</label>
+      </div>
+      <div class="input-field col l4">
+        <input id="codigo" type="number" name="codigo" ngModel>
+        <label for="codigo">Codigo</label>
+      </div>
+      <div class="input-field col l4">
+        <input id="pokemon" type="text" name="pokemon" ngModel>
+        <label for="pokemon">Pokémon</label>
+      </div>
+
+      <button class="waves-effect waves-light btn" type="submit">Submit</button>
+	</form>
+</div>
